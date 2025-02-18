@@ -1,0 +1,35 @@
+{% extends "home_page.html" %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/style/planets_style.css') }}">
+{{ super() }}
+{% endblock %}
+
+
+{% block main %}
+<main class = "main_content">
+    <div class="planets_cards">
+        <div class="planet_card tatooine"  id="1">
+            
+        </div>
+        <div class="planet_card alderaan" id="2">
+        
+        </div>
+        <div class="planet_card yavin" id="3">
+        
+        </div>
+        <div class="planet_card hoth" id="4">
+        
+        </div>
+        <button class="back_btn">Back to home</button>  
+    </div>
+</main>
+
+
+{% endblock %}
+
+{% block script %}
+
+    <script src="{{ url_for('static', path='/js/planets.js') }}"></script>
+
+ {% endblock %}

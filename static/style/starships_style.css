@@ -1,0 +1,99 @@
+.starships_cards{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: grid;
+    grid-template-columns: repeat(4, 400px);
+    justify-items: center;
+}
+
+.starship_card{
+    width: 350px;
+    height: 350px;
+    transition: 0.5s;
+    border: 1px;
+    background-position: center;
+    background-size: contain; 
+    background-repeat: no-repeat;
+}
+
+
+.corvette{
+    background-image: url(../starships/CR90_corvette.jpg);
+}
+
+.destroyer{
+    background-image: url(../starships/star_destroyer.jpg);
+}
+
+.sentinel{
+    background-image: url(../starships/Sentinel-class.jpg);
+}
+
+.death_star{
+    background-image: url(../starships/death_star.jpg);
+}
+
+.info{
+    font-family: "Palatino Linotype", sans-serif;
+    font-size: 12px;
+    width: 600px;
+    height: auto;
+    padding-left: 10px;
+    border: solid black 3px;
+    position: absolute;
+    transition: 0.3s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+}
+
+.chosen_target{
+    transform: scale(1.1)
+}
+
+.body_opacity{
+    opacity: 25%;
+    transition: 1s;
+    background-color: rgb(184, 178, 178);
+}
+
+.body_no_opacity{
+    opacity: 100%;
+    transition: 1s;
+}
+
+.close_btn{
+    position: absolute;
+    left: 95%;
+    top: 2%;
+    width: 25px;
+    height: 25px;
+    font-family: "Palatino Linotype", sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    padding: 0;
+    color: rgb(159, 8, 8);
+    background-color: rgb(148, 145, 145);
+    border: 0px solid rgb(129, 126, 126);
+    border-radius: 50%;
+}
+
+
+.back_btn{
+    font-family: "Palatino Linotype", sans-serif;
+    font-size: 15px;
+    text-align: center;
+    position: absolute;
+    top: -20%;
+    right: 91%;
+}
+
+.invisible{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}

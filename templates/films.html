@@ -1,0 +1,42 @@
+{% extends "home_page.html" %}
+
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/style/films_style.css') }}">
+{{ super() }}
+{% endblock %}
+
+
+{% block main %}
+<main class = "main_content">
+    <div class="film_cards">
+        <div class="films_card ep_one"  id="4">
+    
+        </div>
+        <div class="films_card ep_two" id="5">
+        
+        </div>
+        <div class="films_card ep_three" id="6">
+        
+        </div>
+        <div class="films_card ep_four" id="1">
+        
+        </div>
+        <div class="films_card ep_five" id="2">
+        
+        </div>
+        <div class="films_card ep_six" id="3">
+        
+        </div>
+        <button class="back_btn">Back to home</button>  
+    </div>
+</main>
+
+
+{% endblock %}
+
+{% block script %}
+
+    <script src="{{ url_for('static', path='/js/films.js') }}"></script>
+
+ {% endblock %}

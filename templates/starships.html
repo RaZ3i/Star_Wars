@@ -1,0 +1,35 @@
+{% extends "home_page.html" %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/style/starships_style.css') }}">
+{{ super() }}
+{% endblock %}
+
+
+{% block main %}
+<main class = "main_content">
+    <div class="starships_cards">
+        <div class="starship_card corvette"  id="2">
+            
+        </div>
+        <div class="starship_card destroyer" id="3">
+        
+        </div>
+        <div class="starship_card sentinel" id="5">
+        
+        </div>
+        <div class="starship_card death_star" id="9">
+        
+        </div>
+        <button class="back_btn">Back to home</button>  
+    </div>
+</main>
+
+
+{% endblock %}
+
+{% block script %}
+
+    <script src="{{ url_for('static', path='/js/starships.js') }}"></script>
+
+ {% endblock %}

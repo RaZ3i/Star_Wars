@@ -1,0 +1,44 @@
+{% extends "home_page.html" %}
+
+{% block style %}
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/style/characters_style.css') }}">
+{{ super() }}
+{% endblock %}
+
+
+{% block main %}
+<main class = "main_content">
+    <div class="characters_cards">
+        <div class="character_card luke"  id="1">
+            
+        </div>
+        <div class="character_card dart_vader" id="4">
+        
+        </div>
+        <div class="character_card leya" id="5">
+        
+        </div>
+        <div class="character_card obi_van" id="10">
+        
+        </div>
+        <div class="character_card anakin" id="11">
+        
+        </div>
+        <div class="character_card han" id="14">
+        
+        </div>
+        <div class="character_card yoda" id="20">
+        
+        </div>
+        <button class="back_btn">Back to home</button>  
+    </div>
+</main>
+
+
+{% endblock %}
+
+{% block script %}
+
+    <script src="{{ url_for('static', path='/js/characters.js') }}"></script>
+
+ {% endblock %}

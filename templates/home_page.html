@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>STAR WARS</title>
+    
+    {% block style %}
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', path='/style/home_css.css') }}">
+    {% endblock %}
+
+</head>
+<body>
+
+    {% block main %}
+    <div class="cards">
+        <div class="card">
+            <img src="{{ url_for('static', path='/films_posters/filmsall.jpg') }}" class ="films_all" alt="films">
+            <div class="under_text">Films</div>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', path='/heroes/all_heroes.jpg') }}" class ="heroes_all" alt="heroes">
+            <div class="under_text">Heroes</div>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', path='/planets/planet.jpg') }}" class ="planets" alt="planets">
+            <div class="under_text">Planets</div>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', path='/starships/ships.jpg') }}" class ="starships" alt="starships">
+            <div class="under_text">Starships</div>
+        </div>
+    </div>
+    {% endblock %}
+
+    {% block script %}
+        <script src="{{ url_for('static', path='/js/home_page.js') }}"></script>
+ {% endblock %}
+</body>
+</html>
